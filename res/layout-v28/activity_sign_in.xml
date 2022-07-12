@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#092C4C"
+            android:textSize="24sp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:letterSpacing="0.03"
+            android:text="@string/sign_in_title"
+            android:layout_marginTop="50dp"
+            android:lineHeight="36dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#092C4C"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:letterSpacing="0.02"
+            android:text="@string/sign_in_des"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineHeight="22dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="#092C4C"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineHeight="14dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_email"
+                android:textColorHint="#ABB3BB"
+                android:textColor="#092C4C"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:letterSpacing="0.02"
+                android:lineHeight="14dp"
+                android:autofillHints="emailAddress"
+                android:maxLines="1"
+                android:inputType="textWebEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="#092C4C"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineHeight="14dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_your_password"
+                    android:textColorHint="#ABB3BB"
+                    android:textColor="#092C4C"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:letterSpacing="0.02"
+                    android:lineHeight="14dp"
+                    android:autofillHints="password"
+                    android:maxLines="1"
+                    android:inputType="textWebPassword"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="28dp"
+            android:layout_marginVertical="4dp"
+            >
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:lineHeight="14dp"
+                android:textColor="#FC6D5B"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_try_login"
+            android:layout_width="327dp"
+            android:layout_height="52dp"
+            android:background="@drawable/gradual_yellow"
+            android:text="@string/sign_in"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#54480C"
+            android:letterSpacing="0.03"
+            android:layout_marginTop="50dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="34dp"
+            android:layout_marginTop="50dp"
+            >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="0.7dp"
+                android:background="#E8E8E8"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="0.7dp"
+                android:background="#E8E8E8"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:letterSpacing="0.03"
+                android:text="@string/or_continue_with"
+                android:textColor="#ABB3BB"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="34dp">
+
+            <Button
+                android:id="@+id/btn_google"
+                android:layout_width="155dp"
+                android:layout_height="52dp"
+                android:background="@drawable/gradual_red"
+                android:text="@string/google"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="#fff"
+                android:letterSpacing="0.03"
+                android:drawableStart="@drawable/ic_google"
+                android:paddingHorizontal="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_facebook"
+                android:layout_width="155dp"
+                android:layout_height="52dp"
+                android:background="@drawable/gradual_blue"
+                android:text="@string/facebook"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="#fff"
+                android:letterSpacing="0.03"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_facebook"
+                android:paddingHorizontal="20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:letterSpacing="0.03"
+                android:text="@string/tip1"
+                android:textColor="#092C4C"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv2signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:letterSpacing="0.03"
+                android:text="@string/sign_up"
+                android:textColor="#F2613C"
+                android:textSize="12sp"
+                android:paddingStart="4dp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

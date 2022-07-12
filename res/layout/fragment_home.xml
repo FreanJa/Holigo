@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub_tittlw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/sub_tittlw"
+                android:textAppearance="@style/sub_tittlw" />
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:gravity="top"
+                android:text="@string/tittle"
+                android:textAppearance="@style/tittle" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:src="@drawable/ic_location"
+                    android:layout_gravity="center"
+                    app:tint="#F2613C"
+                    />
+
+                <TextView
+                    android:id="@+id/spot_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zhejiang_china"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textAppearance="@style/location1"
+                    android:layout_marginStart="16dp"
+                    />
+
+            </LinearLayout>
+
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/search_bar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="24dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:background="@drawable/rectangle_2"-->
+<!--                app:queryHint="Try to find the Mount Fuji here"-->
+<!--                app:iconifiedByDefault="false"-->
+<!--                app:queryBackground="@drawable/rectangle_2"-->
+<!--                />-->
+
+            <LinearLayout
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/search_hint"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:gravity="top"
+                        android:text="@string/popular_des"
+                        android:textAppearance="@style/popular_des" />
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/popularViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:clipToPadding="false"
+                    android:foregroundGravity="center"
+                    android:overScrollMode="never"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="top"
+                    android:text="@string/recommended"
+                    android:textAppearance="@style/popular_des" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/recommended_lv"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

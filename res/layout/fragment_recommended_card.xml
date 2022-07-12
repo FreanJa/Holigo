@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="367dp"
+        android:layout_height="104dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp">
+
+            <ImageView
+                android:id="@+id/recommended_iv"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:src="@drawable/mount"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/place_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="@string/place_title"
+                        android:textAppearance="@style/tittle2" />
+
+                    <TextView
+                        android:id="@+id/place_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/place_price"
+                        android:textAppearance="@style/tittle2"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:id="@+id/ratings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:gravity="top"
+                        android:text="@string/ratings_brief"
+                        android:textAppearance="@style/ratings" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/place_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        android:gravity="top"
+                        android:text="@string/location2"
+                        android:textAppearance="@style/ratings" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
